@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<% include ../partials/head %>
+	<title></title>
+</head>
+<body class="container">
+        <header>
+                <% include ../partials/header %>
+        </header>
+
+
+<main>
+		<div class="row">
+			<div class="col-sm-9">
+                <div class="jumbotron">
+                        
+                        <center>
+                        <h3> Your ideal bromance is with a bro named: <%= bestmatch %> </h3> 
+                        <br>
+                        <h3> His email is <%= bestmatch_email %> </h3> 
+        
+
+                        
+        
+                </div>
+ 
+
+            </div>
+			<div class="col-sm-3">
+				
+				<div class="well">
+                
+    
+                            <center>
+                                <button type="submit" class="btn btn-info" ><a href="/homepage_details"> Account Details </a> </button>
+                                <br><br>
+                                <button type="submit" class="btn btn-info"><a href="/survey"> Take Survey </a> </button>
+                                <br><br>
+                                <button type="submit" class="btn btn-info"><a href="/review_survey"> Review Your Answers </a> </button>
+                            </center>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+
+
+<footer>
+		<% include ../partials/footer %>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../partials/head %>
+</head>
+<body class="container">
+
+	<header>
+		<% include ../partials/header %>
+	</header>
+
+	<main>
+		<div class="row">
+			<div class="col-sm-9">
+		
+				<div class="jumbotron">
+						<h1>Login to your Brocount</h1>
+					<form action="/login" method="POST">
+						<div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                        </div>
+						<button type="submit" class="btn btn-info">Submit </button>
+					</form>
+					<br>
+					
+					<div class="login-register">
+							<button type="button" class="btn btn-success"><a href="/signup">Sign Up</a></button>
+					</div>
+					
+				</div>
+				
+			</div>
+			<!-- <div class="col-sm-4">
+				
+				<div class="well">
+					<h3></h3>
+				</div>
+			</div> -->
+		</div>
+	</main>
+
+	<footer>
+		<% include ../partials/footer %>
+	</footer>
+	
+</body>
+</html>

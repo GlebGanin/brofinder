@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<% include ../partials/head %>
+	<title></title>
+</head>
+<body class="container">
+        <header>
+                <% include ../partials/header %>
+        </header>
+
+
+<main>
+		<div class="row">
+			<div class="col-sm-9">
+                <div class="jumbotron">
+                        
+                        <h2> Here are your answers, <%= user_name %> </h2> <br><br>
+
+                        <ol>
+                            <h4>
+
+                                <li>Bros over hoes. <span class="survey_box"> <%= question1 %> </span> </li> 
+                                <br>
+                                <li>30 rack of keystone is better than a 12 pack of Lagunitas, <span class="survey_box"> <%= question2 %></span></li>
+                                <br>
+                                <li>I hate sleaves. <span class="survey_box"> <%= question3 %></span></li>
+                                <br>
+                                <li>I cried at the end of Sons of Anarchy. <span class="survey_box"> <%= question4 %></span></li>
+                                <br>
+                                <li> I own hella headbands. <span class="survey_box"> <%= question5 %></span></li>
+                                <br>
+                                <li>I own more tanktops than ties. <span class="survey_box"> <%= question6 %></span></li>
+                                <br>
+                                <li>Boardshorts are acceptable at dinner. <span class="survey_box"> <%= question7 %></span></li>
+                                <br>
+                                <li>Its not an STD if its treatable. <span class="survey_box"> <%= question8 %></span></li>
+                                <br>
+                                <li>I was an underated highschool football player that should have went pro. <span class="survey_box"> <%= question9 %></span></li>
+                                <br>
+                                <li>I can chug a bear in less than 5 seconds. <span class="survey_box"> <%= question10 %></span></li>
+                                <br><br>
+                                
+                            </h4>
+                        </ol> 
+                        <center>
+                        <button type="submit" class="btn btn-info"><a href="/survey"> Retake Survey </a> </button>
+                        </center>
+        
+                </div>
+ 
+
+            </div>
+			<div class="col-sm-3">
+				
+				<div class="well">
+                
+    
+                            <center>
+                                <button type="submit" class="btn btn-info" ><a href="/homepage_details"> Account Details </a> </button>
+                                <br><br>
+                                <button type="submit" class="btn btn-info"><a href="/survey"> Take Survey </a> </button>
+                                <br><br>
+                                <button type="submit" class="btn btn-info"><a href="/review_survey"> Review Your Answers </a> </button>
+                            </center>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+
+
+<footer>
+		<% include ../partials/footer %>
+	</footer>
+
+</body>
+</html>

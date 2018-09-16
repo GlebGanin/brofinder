@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<% include ../partials/head %>
+	<title></title>
+</head>
+<body class="container">
+        <header>
+                <% include ../partials/header %>
+        </header>
+
+
+<main>
+		<div class="row">
+			<div class="col-sm-9">
+                <div class="jumbotron">
+                        <h2> Account Details for: <%= user_name %> </h2> <br><br>
+
+                        <ul>
+                                <!-- <a href="/create_wishlist">Wishlist</a> -->
+                        </ul>
+
+                        <div>
+                              <h4>User Email:</h4><h3> <%= email %> </h3> <br>
+                              <h4> User Password:</h4><h3> <%= password %> </h3> <br>
+                           
+                        </div>
+                </div>
+ 
+
+            </div>
+			<div class="col-sm-3">
+				
+				<div class="well">
+                
+    
+                            <center>
+                                <button type="submit" class="btn btn-info"><a href="/homepage_details"> Account Details </a> </button>
+                                <br><br>
+                                <button type="submit" class="btn btn-info"><a href="/survey"> Take Survey </a> </button>
+                                <br><br>
+                                <button type="submit" class="btn btn-info"><a href="/homepage"> Back to Homepage </a> </button>
+			    </center>	
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+
+
+<footer>
+		<% include ../partials/footer %>
+	</footer>
+
+</body>
+</html>

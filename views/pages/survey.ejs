@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../partials/head %>
+</head>
+<body class="container">
+
+	<header>
+		<% include ../partials/header %>
+	</header>
+
+	<main>
+            
+		<div class="row">
+       
+			<!-- <div class="col-sm-10">
+              
+			
+                <div>
+                    <h3>Rate the following 10 statements on a scale of 1-5. 
+                        <br><br>
+                        1 = Do not agree at all 
+                        <br>
+                        2 = Somewhat agree
+                        <br>
+                        3 = W/E
+                        <br>
+                        4 = agree 
+                        <br>
+                        5 = For sure, bro!
+
+                    </h3>
+                </div>
+                <br>
+           
+
+			</div>
+        -->
+			<div class="col-sm-8">
+				
+				<div class="well">
+					<!-- <ul><a href="/">Wishlist</a></ul> -->
+					<!-- <ul><a href="/new">Add a new item to the item list</a></ul> -->
+				
+
+					<form method="POST" action="/answer_survey">
+					    <h4>
+						<select id="select_dropdown" name="question1" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        Bros over hoes.
+                        <br><br>
+                        
+                        
+						<select id="select_dropdown" name="question2" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        30 rack of keystone is better than a 12 pack of Lagunitas,
+                        <br><br>
+                    
+                        
+						<select id="select_dropdown" name="question3" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        Saturdays are for the boys.
+                        <br><br>
+
+                        
+						<select id="select_dropdown" name="question4" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        Sons of Anarchy is the greatest show ever made.... period .... 
+                        <br><br>
+                        
+                        
+						<select id="select_dropdown" name="question5" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        Headbands and fidoras are awesome headwear.
+                        <br><br>
+                        
+                        
+						<select id="select_dropdown" name="question6" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        Do you even lift, bro?
+                        <br><br>
+                        
+                        
+						<select id="select_dropdown" name="question7" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        Boardshorts are acceptable at dinner.
+                        <br><br>
+                        
+                        
+						<select id="select_dropdown" name="question8" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        Its not an STD if its treatable.
+                        <br><br>
+                        
+                        
+						<select id="select_dropdown" name="question9" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+                        </select>
+                        If it wasnt my injury, I would have went pro. 
+                        <br><br>
+                        
+                        
+						<select id="select_dropdown" name="question10" width="38">
+                            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option>
+						</select>
+                        My BAC is always higher that my GPA.
+                        </h4>
+                        <br><br>
+
+						<button type="submit" class="btn btn-info">SUBMIT</button>
+					</form>
+					<!-- <h3>Look I'm A Sidebar!</h3> -->
+				</div>
+            </div>
+
+                <div class="col-sm-4">
+				
+                        <div class="well">
+                        
+           
+                                <center><h3>Rate the following statements on a scale <br>of 1-5. </h3></center>
+                                       
+                                        <div id="bro_choices">
+                                        <h4>
+                                        1 = Hell naw brah
+                                        <br> <br>
+                                        2 = Kinda brah
+                                        <br> <br>
+                                        3 = W/E brah
+                                        <br> <br>
+                                        4 = Yah brah
+                                        <br> <br>
+                                        5 = For sure, brah!
+                                        </h4>
+                                        </div>
+
+                        </div>
+        
+                    </div>
+
+
+			
+        </div>
+   
+	</main>
+
+	<footer>
+		<% include ../partials/footer %>
+	</footer>
+	
+</body>
+</html>

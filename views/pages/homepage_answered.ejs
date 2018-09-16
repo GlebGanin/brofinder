@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<% include ../partials/head %>
+	<title></title>
+</head>
+<body class="container">
+        <header>
+                <% include ../partials/header %>
+        </header>
+
+
+<main>
+		<div class="row">
+			<div class="col-sm-9">
+                <div class="jumbotron">
+                        <center>
+                        <h2> Thanks for taking the survey, <%= user_name %> </h2> <br>
+                        <h3> Click the button below to find your match! </h3> <br><br>
+
+                        
+                                <button type="submit" class="btn btn-info" ><a href="/find_match"> FIND YOUR MATCH! </a> </button>
+                         </center>
+        
+                </div>
+ 
+
+            </div>
+			<div class="col-sm-3">
+				
+				<div class="well">
+                
+    
+                            <center>
+                                <button id="menu_button" type="submit" class="btn btn-info" ><a href="/homepage_details"> Account Details </a> </button>
+                                <br><br>
+                                <button id="menu_button" type="submit" class="btn btn-info"><a href="/survey"> Take Survey </a> </button>
+                                <br><br>
+                                <button id="menu_button" type="submit" class="btn btn-info"><a href="/review_survey"> Review Your Answers </a> </button>
+                            </center>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+
+
+<footer>
+		<% include ../partials/footer %>
+	</footer>
+
+</body>
+</html>
